@@ -1,12 +1,12 @@
 WaspswithRainofStings
 ====================
 
-By Ji-Hun Seol (jihoon.seol@gmail.com)
+By arkemiq (arkemiq@gmail.com)
 
 Description
 -----------
 
-WaspswithRainofStings is a distributed heavy load generator in Ruby inspired by waspswithmachineguns(https://github.com/newsapps/waspswithmachineguns).
+Wasp is a distributed heavy load generator in Ruby inspired by beeswithmachineguns(https://github.com/newsapps/beeswithmachineguns).
 
 This is a utility of arming(create and install load program) many wasps (micro EC2 instances)
 from multiple regions(EC2 zones) to attack (load test) targets(web applications).
@@ -14,8 +14,8 @@ from multiple regions(EC2 zones) to attack (load test) targets(web applications)
 Installation
 ------------
 
-	$ git clone https://github.com/jhseol/waspswithrainofstings.git
-	$ cd waspswithrainofstings
+	$ git clone https://github.com/arkemiq/wasp.git
+	$ cd wasp
 	$ bundle install
 
 Configuring EC2 credentials
