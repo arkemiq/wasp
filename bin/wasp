@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../../lib/wasp', __FILE__)
+
+WASP::Nest.wakeup(ARGV.dup)
+

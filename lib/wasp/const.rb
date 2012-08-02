@@ -1,0 +1,21 @@
+module WASP
+  module Const
+    VERSION = '0.2.0'
+  
+    DEFAULT_WASPS = 5
+    DEFAULT_GROUP = 'wasps'
+    DEFAULT_ZONE = 'us-east-1'
+    DEFAULT_AMI = 'ami-baba68d3'
+    DEFAULT_USER = 'ubuntu'
+    DEFAULT_KEY = 'wasp'
+    DEFAULT_NUMBER_OF_REQUESTS = 1000
+    DEFAULT_TIME = 10
+    DEFAULT_CONCURRENT_OF_CONNECTIONS = 100
+    DEFAULT_WEAPON = 'ab'
+    SSH_PORT = 22
+    NATS_PORT = 4222
+    DEFAULT_MAXIMUM_STINGS = 10000
+    DEFAULT_WAVE_TIME = 10
+    DEFAULT_COOLDOWN = 10
+  end
+end
