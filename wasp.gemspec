@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name        = 'wasp'
-  s.version     = '0.1.0'
+  s.version     = '0.2.0'
   s.summary     = "Wasps!"
   s.description = "Wasps!"
-  s.authors     = ["jhseol"]
-  s.email       = 'jihoon.seol@gmail.com'
+  s.authors     = ["arkemiq"]
+  s.email       = 'arkemiq@gmail.com'
   s.files = %w[
     Gemfile
     Rakefile
@@ -21,14 +21,14 @@ Gem::Specification.new do |s|
 	  lib/wasp/core_ext.rb
 	  lib/wasp/ec2.rb
 	  lib/wasp/queenwasp.rb
-	  lib/wasp/weaponab.rb
+	  lib/wasp/stingab.rb
 	  report/makeplot.rb
 	  test/test_wasp.rb
   ]
   s.license     = 'MIT'
   s.required_ruby_version = '>= 1.9.2'
   s.platform    = Gem::Platform::RUBY
-  s.homepage    = ''
+  s.homepage    = 'http://github.com/arkemiq'
   s.add_dependency("aws-sdk", ">= 1.3.2")
   s.add_dependency("net-ssh", ">= 2.3.0")
   s.add_dependency("net-scp", ">= 1.0.4")
