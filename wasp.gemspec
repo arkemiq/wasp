@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name        = 'wasp'
-  s.version     = '0.2.0'
-  s.summary     = "Wasps!"
-  s.description = "Wasps!"
+  s.version     = '0.2.1'
+  s.summary     = "Lightweight distributed load generator."
+  s.description = "Wasp is a distributed heavy load generator in Ruby inspired by beeswithmachineguns."
   s.authors     = ["arkemiq"]
   s.email       = 'arkemiq@gmail.com'
   s.files = %w[
