@@ -140,6 +140,7 @@ module WASP
       print "#{wave} ".yellow + "wave report:\n"
       stingless_wasps.each do |wasp|
         report = wasp[:wavereport]
+        next if report.nil?
         case
         when report.match(/currently not installed/) then
           print "[WARN]".yellow + " Some of wasps has no weapon to attack.\n"
