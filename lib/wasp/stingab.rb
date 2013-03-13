@@ -58,11 +58,7 @@ module WASP
       end     
       
       if not @ulimit then
-        command = "sudo bash -c \"echo '*   soft  nofile  19999' >>  /etc/security/limits.conf\""
-        @ssh.exec! command
-        command = "sudo bash -c \"echo '*   hard  nofile  19999' >>  /etc/security/limits.conf\""
-        @ssh.exec! command
-        command = "sudo bash -c \"echo 100000 > /proc/sys/kernel/threads-max\""
+        command = "if [ -z \"$(cat /etc/security/limits.conf| grep '^*.*[soft|hard].*nofile')\" ]; then bash -c \"echo '*   soft  nofile  65535' >>  /etc/security/limits.conf\"; bash -c \"echo '*   hard  nofile  65535' >>  /etc/security/limits.conf\"; bash -c \"echo 100000 > /proc/sys/kernel/threads-max\"; fi"
         @ssh.exec! command
       end
     end
