@@ -6,12 +6,10 @@ GEM
       json (~> 1.4)
       nokogiri (<= 1.5.0)
       uuidtools (~> 2.1)
-    httparty (0.8.1)
-      multi_json
-      multi_xml
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
     json (1.6.5)
-    multi_json (1.1.0)
-    multi_xml (0.4.2)
+    multi_xml (0.6.0)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-ssh (2.3.0)
